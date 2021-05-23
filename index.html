@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- this is the link for google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <header class="header pink-section">Etch A Sketch</header>
+      <div class="left-side blue-section">
+        Instructions
+        <ul>
+          <li>click on the button to restart the game!</li>
+          <li>provide the number of squares for height</li>
+          <li>provide the number of squares for width</li>
+        </ul>
+        <div class="buttons">
+          <a href="#" class="myButton">restart</a>
+        </div>
+      </div>
+      <main class="main section-coral">
+        <!-- Etch A Sketch -->
+        <div class="parent-container">
+          <div id="resizable"></div>
+        </div>
+      </main>
+      <div class="right-side yellow-section">
+        Pick Your Color
+        <div class="buttons">
+          <a href="#" class="myblackbutton">Default Color</a>
+        </div>
+        <div class="buttons">
+          <a href="#" class="colorthis">Random Color</a>
+        </div>
+
+        <div class="buttons">
+          <a href="#" class="myreset">Clear The Grid</a>
+        </div>
+      </div>
+      <footer class="footer green-section">Thank You For Playing!</footer>
+    </div>
+
+    <!-- and also i needed to add this two other scripts the js and ui.js from jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
